@@ -9,8 +9,8 @@ import {   CheckUser  } from './logger.middleware';
 })
 export class UsersModule implements NestModule {
   configure(consumer: MiddlewareConsumer) {
-    consumer.apply(CheckUser).forRoutes({path:"*",  method: RequestMethod.GET})
-    consumer.apply(CheckUser).forRoutes({path:"*",  method: RequestMethod.POST})
+    // consumer.apply(CheckUser).forRoutes({path:"*",  method: RequestMethod.GET})
+    // consumer.apply(CheckUser).forRoutes({path:"*",  method: RequestMethod.POST})
   }
 
 }
