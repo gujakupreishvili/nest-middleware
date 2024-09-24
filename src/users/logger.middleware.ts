@@ -49,7 +49,8 @@ export class FindUser implements NestMiddleware{
   use(req: Request, res: Response, next: NextFunction ) {
     const ip = req.ip;
     const geo = geoip.lookup(ip);
-    console.log(geo)
+    console.log(geo, "geo ip")
+    console.log(req.ip, "req.ip")
     next()
   }
 }
